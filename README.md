@@ -1,6 +1,4 @@
 # Algoritmo-FIFO
-Este proyecto es un simulador del algoritmo de planificación FIFO (First In, First Out) para la gestión de procesos en un sistema operativo. El programa genera procesos de forma aleatoria con tiempos de ejecución entre 10 y 35 segundos (en múltiplos de 5) y los gestiona a través de los estados: nuevo, espera, ejecución y terminado.
+La clase Proceso representa la entidad principal dentro del sistema de simulación del algoritmo FIFO. Se encarga de modelar cada proceso con atributos como identificador, tiempo de ejecución, tamaño y estado (nuevo, en espera, en ejecución y terminado).
 
-El sistema mantiene una cola con un máximo de 10 procesos; cuando se alcanza este límite, los nuevos procesos son rechazados y almacenados en una lista de rechazados. Además, muestra en tiempo real una tabla con el estado de cada proceso, permitiendo visualizar su ciclo de vida completo.
-
-El programa incluye controles de inicio y finalización, y al terminar presenta estadísticas como número de procesos creados, atendidos, finalizados, rechazados y el tiempo promedio de ejecución.
+Además, gestiona el comportamiento del proceso a lo largo de su ciclo de vida, permitiendo su transición entre estados según la planificación del sistema. Esta clase es fundamental para la simulación, ya que encapsula la información y lógica necesaria para el control y seguimiento de cada proceso dentro de la cola de ejecución.
